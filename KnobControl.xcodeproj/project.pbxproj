@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B75E29DF2402BCFF00C6D777 /* KnobControl.h in Headers */ = {isa = PBXBuildFile; fileRef = B75E29DD2402BCFF00C6D777 /* KnobControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B75E29E62402BE2400C6D777 /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E29E52402BE2400C6D777 /* Knob.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B75E29DA2402BCFF00C6D777 /* KnobControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KnobControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75E29DD2402BCFF00C6D777 /* KnobControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnobControl.h; sourceTree = "<group>"; };
 		B75E29DE2402BCFF00C6D777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B75E29E52402BE2400C6D777 /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				B75E29DD2402BCFF00C6D777 /* KnobControl.h */,
 				B75E29DE2402BCFF00C6D777 /* Info.plist */,
+				B75E29E52402BE2400C6D777 /* Knob.swift */,
 			);
 			path = KnobControl;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					B75E29D92402BCFF00C6D777 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75E29E62402BE2400C6D777 /* Knob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		B75E29E32402BCFF00C6D777 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cngs.TestURLSchemes.KnobControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		B75E29E42402BCFF00C6D777 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
